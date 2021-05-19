@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 2</title>
+        <link rel="stylesheet" href="main.Bai1.css">
+        <style>
+            table, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table{
+                background-color: burlywood; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+            td{
+                color:blue;
+            }
+            fieldset{
+                width: 280px;
+                margin-left: auto; 
+                margin-right: auto; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: blue;", class="center">Đăng ký du lịch</h1>
+        <form action="/action_page.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Họ và tên</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="phoneNunmber">Điện thoại</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="VietNamClient">Khách Việt Nam</label></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="tour">Chọn tour</label></td>
+                    <td>
+                        <select>
+                        <option value="Buôn mê thuột - Gia lai - Kontum">Buôn mê thuột - Gia lai - Kontum</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="transport">Phương tiện</label></td>
+                    <td>
+                        <input name="transport" type="radio"> Máy bay
+                        <input name="transport" type="radio"> Ô tô
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 
+                    <fieldset >
+                        <legend>Số lượng đoàn khách</legend>
+                        <label for="adults">Người lớn</label>
+                        <input type="number" name="Adults" min="0" max="20">
+                        <label for="kid">Trẻ em</label>
+                        <input type="number" name="Adults" min="0" max="20">
+                    </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="note">Ghi chú thêm</label></td>
+                    <td>
+                        <textarea name="message" style="width: auto; height:auto;">
+                            Có 2 trẻ em dưới 6 tuổi. Có 2 người ăn chay
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="center">
+                            <input type="submit" value="Đồng ý">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p style="color:yellow;" class="center">Bạn đã đăng ký thành công!!!</p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
