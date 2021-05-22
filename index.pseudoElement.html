@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Tạo kiểu cho các phần cụ thể của phần tử -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            P::first-line{
+                /* chỉ sử dụng cho phần tử block */
+                color: rgb(201, 20, 20);
+            }
+            p::before{
+                content:url(https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/sign-right-icon.png);
+            }
+            P::first-letter{
+                /* chỉ sử dụng cho phần tử block */
+                color: rgb(0, 0, 0);
+                font-size: x-large;
+            }
+            p::after{
+                content:url(https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/sign-left-icon.png);
+            }
+            ::marker { 
+                color: rgb(233, 0, 0);
+            }
+            li::selection{
+              color: red;
+              background-color: yellow;  
+            }
+        </style>
+    </head>
+    <body>
+        <p>"Chúng tôi cũng đề nghị Bộ GD-ĐT sớm có phương án tổ chức kỳ thi tốt nghiệp THPT theo các đợt khác nhau. Trong đó ở các địa phương là điểm nóng,
+             cần có đợt thi riêng cho đối tượng học sinh đang phải cách ly, hoặc ở trong khu vực phong tỏa" - ông Khoa cho biết.</p>
+        <ol>
+            <li>Bắc Giang</li>
+            <li>Bắc ninh</li>
+            <li>Hà Nội</li>
+        </ol>
+    </body>
+</html>

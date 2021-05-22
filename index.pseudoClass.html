@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Xác địng trạng thái đặc biệt của một phần tử -->
+<html>
+    <head>
+        <style>
+            div:hover{
+                color: rgb(189, 26, 26);
+            }
+            a{
+                display: none;
+                border: 5px solid pink;
+            }
+            div:hover a{
+                display: block;
+                width: 100px;
+            }
+            a:visited{
+                color: rgb(198, 253, 0);
+            }
+            a:hover{
+                color:rgb(235, 15, 15);
+                background-color: pink;
+            }
+            a:active{
+                color: rgb(199, 3, 68);
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="https://www.youtube.com/watch?v=Sbe6BNERgSE" target="_blank">Hôm nay là thứ 7</a></p>
+        <div>
+            Di chuột vào đây
+            <p><a href="https://www.youtube.com/watch?v=Sbe6BNERgSE" target="_blank">Hôm nay là thứ 7</a></p>
+        </div>
+    </body>
+</html>

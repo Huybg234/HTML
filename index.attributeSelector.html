@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Chọn những phần tử có thuộc tính chỉ định -->
+<html>
+    <head>
+        <style>
+            a{
+                line-height: 30px;
+            }
+            /* Chỉ địng phần tử có thuộc tính chỉ định */
+            a[target] {
+                background-color: rgb(25, 219, 41);
+            }
+            /* Chỉ định phần tử có thuộc tính và giá trị thuộc tính chỉ định */
+            [target = "_self"]{
+                background-color: rgb(61, 93, 233);
+            }
+            /* Chỉ địng phần tử có thuộc tính và giá trị thuộc tính chứa một từ được chỉ định */
+            [title~="chơi"]{
+                border: 5px solid rgb(214, 72, 16);
+            }
+            /* chỉ định phần tử có thuộc tính và giá trị thuộc tính bắt đầu bằng từ chỉ định (phải nguyên vẹn) */
+            [title|="trang"]{
+                border: 5px solid rgb(193, 206, 7);
+            }
+            /* chỉ định phần tử có thuộc tính và giá trị thuộc tính bắt đầu bằng từ chỉ định (ko phải nguyên vẹn) */
+            [title^="web"]{
+                border: 5px solid rgb(54, 13, 167);
+            }
+            /* chỉ định phần tử có thuộc tính và giá trị thuộc tính kết thúc bằng 1 từ (ko phải nguyên vẹn) */
+            [title$="học"]{
+                border: 5px solid rgb(228, 13, 131);
+            }
+        </style>
+    </head>
+    <body>
+        <p>Những thẻ a nào có thuộc tính target thì sẽ có màu xanh</p>
+        <a href="https://www.youtube.com/" target="_self" title="web-chơi-và-học">youtube</a><br>
+        <a href="https://qldt.ptit.edu.vn/" target="_blank" title="trang-chủ-trường">PTIT</a><br>
+        <a href="https://www.w3schools.com/" target="_top" title="webhọc">w3schools</a>
+    </body>
+</html>
