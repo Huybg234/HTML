@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+            p.test1 {
+                white-space: nowrap; 
+                width: 200px; 
+                border: 1px solid #000000;
+                overflow: hidden;
+                /* báo hiệu nội dung bị tràn không hiển thị cho người dùng */
+                text-overflow: clip;
+            }
+            p.test2 {
+                white-space: nowrap; 
+                width: 200px; 
+                border: 1px solid #000000;
+                overflow: hidden;
+                /* báo hiệu nội dung bị tràn không hiển thị cho người dùng */
+                text-overflow: ellipsis;
+            }
+            p.test3 {
+                width: 100px; 
+                border: 1px solid #000000;
+                /* đoạn văn dài có thể bị ngắt và chuyển xuống dòng dưới */
+                word-wrap: break-word;
+            }
+            p.test4 {
+                width: 100px; 
+                border: 1px solid #000000;
+                word-break: keep-all;
+            }
+            p.test5 {
+                width: 100px; 
+                border: 1px solid #000000;
+                /* Ngắt ở bất kì ký tự nào */
+                word-break: break-all;
+            }
+            p.test6 {
+                writing-mode: vertical-rl; 
+            }
+            p.test1:hover {
+                overflow: visible;
+            }
+            p.test2:hover {
+                overflow: visible;
+            }
+</style>
+</head>
+<body>
+    <p class="test1">Some thing Some thing Some thing Some thing Some thing</p>
+    <p class="test2">Some thing Some thing Some thing Some thing Some thing</p>
+    <p class="test3">Some thing Some thing Some thing Some thing Some thing</p>
+    <p class="test4">Some thing Some thing Some thing Some thing Some thing</p>
+    <p class="test5">Some thing Some thing Some thing Some thing Some thing</p>
+    <p class="test6">Some thing Some thing Some thing Some thing Some thing</p>
+</body>
+</html>

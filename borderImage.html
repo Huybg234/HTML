@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Sử dụng border-image để sử dụng hình ảnh làm đường viền xung quanh phần tử -->
+<html>
+    <head>
+        <style> 
+            #borderimg { 
+                text-align: center;
+                width: 130px;
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://i.stack.imgur.com/sjbeu.png) 30 round;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #borderimg1 { 
+                text-align: center;
+                width: 130px;
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(https://i.stack.imgur.com/sjbeu.png) 60 round;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="borderimg">Ảnh đường viền1</p>
+            <p id="borderimg1">Ảnh đường viền2</p>
+        </div>
+    </body>
+</html>

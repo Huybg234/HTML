@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Dùng để chuyển tiếp mượt mà giữa 2 hoặc nhiều màu -->
+<html>
+    <head>
+        <style>
+            /* gradient tuyến tính */
+            /* Từ trên xuống dưới */
+            #grad1 {
+                height: 200px;
+                background-image: linear-gradient(white, gray, black);
+            }
+            /* từ trái sang phải */
+            #grad2 {
+                height: 200px;
+                background-image: linear-gradient(to right, black, gray, white);
+            }
+            #grad3 {
+                height: 200px;
+                background-image: linear-gradient(to bottom right, black, gray, white);
+            }
+            /* gradient xuyên tâm */
+            #grad4 {
+                height: 200px;
+                width: 200px;
+                background-image: repeating-radial-gradient(black, gray 10%, white 15%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grad1"></div>
+        <div id="grad2"></div>
+        <div id="grad3"></div>
+        <div id="grad4"></div>
+    </body>
+</html>

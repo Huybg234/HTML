@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Thay đổi các giá trị thuộc tính một cách mượt mà, trong một khoảng thời gian chỉ định -->
+<html>
+    <head>
+        <style> 
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                /* chỉ địng hiệu ứng chuyển tiếp cho thuộc tính width và chỉ định chuyển đổi */
+                transition: width 0.5s, height 0.5s, transform 2s;
+                /* Quy định sự chậm chế tính bằng giây */
+                transition-delay: 0.5s;
+            }
+            div:hover {
+                width: 300px;
+                height: 300px;
+                /* Chuyển đổi 2D */
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+<body>
+    <div></div>
+</body>
+</html>

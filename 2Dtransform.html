@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <style>
+            div{
+                float: top;
+                margin: 30px;
+            }
+            div {
+                width: 300px;
+                height: 100px;
+                background-color: yellow;
+                border: 1px solid black;
+                /* di chuyển phần tử từ vị trí hiện tại: sang phải và xuống dưới */
+                transform: translate(100px,100px);
+            }
+            #rotate {
+                /* Xoay phần tử một góc 20 độ thuận chiều kim đh */
+                transform: rotate(20deg);
+                /* có thể xoay ngược chiều kim đh */
+            }
+            #scale{
+                /* tăng kích thước của phần tử chiều ngang 0.5 lần, chiều cao 0.5 lần */
+                transform: scale(0.5, 0.5);
+                /* scaleX: tăng chiều rộng */
+                /* scaleY: tăng chiều cao */
+            }
+            #skew{
+                /* Làm lệch phần từ theo trục X, Y bởi góc chỉ định */
+                transform: skew(20deg,20deg);
+                /* scaleX: lẹch theo x */
+                /* scaleY: lệch theo y   */
+            }
+            #matrix{
+                /* (scaleX (), xiênY (), xiên X (), scaleY (), translateX (), translateY ()) */
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+        </style>
+    </head>
+<body>
+    <div>
+        Some thing Some thing Some thing Some thing Some thing
+    </div>
+    <div id="rotate">
+        Some thing Some thing Some thing Some thing Some thing
+    </div>
+    <div id="scale">
+        Some thing Some thing Some thing Some thing Some thing
+    </div>
+    <div id="skew">
+        Some thing Some thing Some thing Some thing Some thing
+    </div>
+    <div id="matrix">
+        Some thing Some thing Some thing Some thing Some thing
+    </div>
+</body>
+</html>

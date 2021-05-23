@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("https://image.freepik.com/free-vector/yellow-background-with-halftone-lines-design_1017-30148.jpg");
+            }
+            /* Tạo ra một màu trong suốt */
+            div.ex1 { 
+                background-color: transparent;
+                border: 2px solid black;
+                padding: 15px;
+            }
+            /* Giúp nhất quán màu trong một phần tử */
+            div.ex2 { 
+                color: rgb(56, 22, 150);
+                border: 2px solid currentColor;
+                padding: 15px;
+            }
+            /* kế thừa thuộc tính từ cha của nó */
+            span {
+                border: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ex1">This div has a light green background.</div>
+        <br>
+        <div class="ex2">This div has a transparent background.</div>
+        <br>
+        <div style="border:2px dotted blue;">This div has a <span>inherit</span> background.</div>
+    </body>
+</html>
